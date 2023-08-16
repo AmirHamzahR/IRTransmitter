@@ -63,8 +63,8 @@ COMMAND is a 4-bit value denoting directions:
 
 ![HigherLevel](docs/HigherLevel.png)
 
-The overall code can then be connected together to work as intended. They are all connected together in `TOP_stim.v` code file.
-> Note: The available code in this repository is enough only for the infra-red transmitter for the remote car which needs a mouse driver and VGA driver code.
+The overall code can then be connected together to work as intended. They are all connected together in the `TOP_stim.v` code file.
+> Note: The available code in this repository is enough only for the infra-red transmitted. For full control of the remote car, it needs a mouse driver and VGA driver code.
 
 ## ALU.v:
 - 8-bit load-store architecture processor.
@@ -85,12 +85,12 @@ The overall code can then be connected together to work as intended. They are al
 
 - **Instruction Examples**:
   - A <- [Mem] (2 bytes): Read memory to Register A.
-  - A <- ALU_OP(A,B) (1 byte): ALU operation, result to Register A.
+  - A <- ALU_OP(A, B) (1 byte): ALU operation, result to Register A.
   - BREQ ADDR (2 bytes): Conditional branch based on equality of Registers A/B.
 
-- **Architecture**: Uses RISC (Reduced Instruction Set Computing), favored for simplicity and speed over CISC (Complex Instruction Set Computing).
+- **Architecture**: Uses RISC (Reduced Instruction Set Computing), favoured for simplicity and speed over CISC (Complex Instruction Set Computing).
 
-- **Operation**: Behavior follows a state machine structure with sequential pipeline stages for each operation. The Verilog code provided showcases this behavior and includes configurations for reading/writing from memory, ALU operations, branch operations, etc.
+- **Operation**: Behavior follows a state machine structure with sequential pipeline stages for each operation. The Verilog code provided showcases this behaviour and includes configurations for reading/writing from memory, ALU operations, branch operations, etc.
 
 ## RAM.v:
 - 128-byte data memory module.
