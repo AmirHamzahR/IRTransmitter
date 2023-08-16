@@ -60,7 +60,9 @@ COMMAND is a 4-bit value denoting directions:
 - Bit 3: Forward
 
 # Programmer's Guide: 
+
 ![HigherLevel](docs/HigherLevel.png)
+
 The overall code can then be connected together to work as intended. They are all connected together in `TOP_stim.v` code file.
 > Note: The available code in this repository is enough only for the infra-red transmitter for the remote car which needs a mouse driver and VGA driver code.
 
